@@ -1,0 +1,7 @@
+pinecone
+google
+google-api-python-client
+grpcio
+protoc_gen_openapiv2
+uuid
+python-dotenv

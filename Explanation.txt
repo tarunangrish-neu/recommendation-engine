@@ -1,0 +1,31 @@
+
+1 Introduction
+This report details the approach taken to build a movie recommendation system using large language models leveraging Retrieval Augmented Generation
+2 Approach
+    Data Collection and Preprocessing - Collected a large dataset of movie titles, genres, descriptions, and user ratings.
+                                      - Preprocessed the data to remove duplicates, handle missing values, and normalize the text for analysis.
+    Model Selection - Chose Chat-Gpt-3.5-turbo state-of-the-art large language model capable of understanding and generating natural language. The model’s ability to capture semantic meaning and context in text was crucial for this task.
+    Embedding the data - Used Jina AI’s General Purpose text embedding model to embed text to vectors.
+    Uploading to Vector DB - Inserted the data in pinecone (Vector DB with metadata of each movie)
+    Recommendation Algorithm - Developed an algorithm to generate movie recommendations based on user input. Employed cosine similarity to match user preferences with movie plots.
+                             - Employed metadata filtering from user prompt to provide accurate results.
+Challenges Faced
+Data Quality and Quantity
+Challenge: Limited and inconsistent data quality, with missing values and duplicate entries. Solution: Implemented robust data cleaning and augmentation techniques to improve data quality.
+Model Complexity
+Challenge: Managing the complexity and computational requirements of large language models. Solution: Leveraged cloud computing resources and optimized model parameters to balance perfor- mance and resource usage.
+
+Overcoming Challenges
+Data Cleaning: Developed automated scripts to clean and preprocess data efficiently, ensuring high-quality inputs for the model.
+Resource Management: Used cloud-based GPU resources for model training and inference, enabling efficient handling of large-scale computations.
+Personalization: Combined content-based filtering with collaborative filtering to create a hybrid recommendation system, enhancing personalization and accuracy.
+
+Conclusion
+
+The project successfully built a movie recommendation system using large language models, addressing various challenges through innovative solutions. This system demonstrates the potential of combin- ing advanced NLP techniques with traditional recommendation algorithms to deliver personalized user experiences.
+
+Future Work
+
+Enhance model training with larger and more diverse datasets. Integrate real-time user feedback for continuous improvement.
+Explore additional features such as user reviews and social media interactions to further refine recommendations.
+This report provides a comprehensive overview of the methods and challenges encountered in devel- oping a movie recommendation system with large language models.
